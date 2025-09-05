@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import os
 from dotenv import load_dotenv
-from .kraken_client import fetch_ohlc_data
-from .deepseek_client import generate_signal
+from src.kraken_client import fetch_ohlc_data
+from src.deepseek_client import generate_signal
 
 load_dotenv()
 
